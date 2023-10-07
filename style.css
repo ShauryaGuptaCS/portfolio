@@ -10,58 +10,64 @@
 }
 html, body{
     /* background-color: blanchedalmond; */
-    width:100%;
-    height:100%;
     color: white;
 }
 
 .navbar{
+    width:100%;
     background-color: black;
     color:white;
     display:flex;
-    justify-content: space-between;
-    font-size: 40px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
     position: fixed;
-    width: 100%;
 }
-
+.navbar-heading{
+    font-size: 50px;
+}
+.navbar-ul{
+    font-size: 27px;
+}
+.navbar-ul a{
+    text-decoration: none;
+    color:white
+}
+.navbar-ul a:hover{
+    font-size:30px;
+}
 .d1{
-    display: flex;
     width:100%;
-    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color:#6f6e6c;
-    /* background-color: chartreuse; */
+    height:500px;
 }
 .left{
-    width: 50%;
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: blue; */
+    width:30%;
 }
-
-.left_ul{
-    list-style: none;
-    
+.left div{
+    font-size: 35px;
+}
+.left div span{
+    color: gold;
 }
 
 .right{
-    width:50%;
-    height:100%;
-    display: flex;
-    /* background-color: brown; */
-    justify-content: center;
-    align-items: center;
+    width:30%;
 }
-.d1_img{
-    width:40%;
-    height:80%;
-    border-radius: 50%;
+.right img{
+    width:238px;
+    height:242px;
+    border: 10px solid black;
+    border-radius: 147px;
+    
 }
+
 .education{
     width:100%;
-    height: 75%;
+    height: 500px;
     background-color:rgb(209, 204, 204);
     display:flex;
 }
@@ -73,24 +79,27 @@ html, body{
     color:black;
 }.edu-img{
     width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .e-img{
-    width:100%;
-    height:100%;
-    object-fit: fill;
+    width:300px;
+    height:300px;
 }
 
 .education_ul{
+    font-size: 22px;
     padding-left: 2.5%;
     list-style-type:circle;
 }
-.Skills_ul{
-    padding-left:2.5%;
-    list-style-type: circle;
-}
+
+    
 .Skills{
     display:flex;
-    height: 75%;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
     width: 100%;
     background-color:#86878a;
 }
@@ -101,74 +110,50 @@ html, body{
     align-items: center;
 }
 .s-img{
-    width:50%;
-    height: 50%;
+    width:250px;
+    height: 250px;
     object-fit: cover;
 }
 
 .skill-con{
     width:50%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.sk-con b{
+    font-size: 30px;
+    display: block;
+}
 
-.Lang_ul{
-    list-style-type:square ;
-    padding-left:2.5% ;
-}
-.psit{
-    width:500px;
-    height:500px;
-}
 .btn-sk{
-    width:150px;
-    height:50px;
-    /* border-radius: 20%; */
+    width:153px;
+    height:54px;
     margin:20px;
+    font-size: 20px;
+    border-radius: 27px;
     background-color: rgb(21, 19, 19);
     color:white;
     
 }
 .btn-sk:hover{
     background-color: #c0c0c0;
-    width:120px;
-    height:60px;
+    width:148px;
+    height:51px;
 }
-.Contact{
-    background-color:black;
-    display: flex;
-    width: 100%;
-    height: 15%;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 .linkedin-logo{
-    width: 10%;
+    width: 56px;
+    margin-right: 3px;
 }
 a:link,:visited,:active{
     color: white;
 }
 a:hover{
-    color:rgba(68, 68, 200, 0.537);
+    color:rgb(244, 217, 65);
 }
-.a-contact{
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
-.cont-con{
-    display: flex;
-}
-
 .project{
     width:100%;
-    height:75%;
+    height:500px;
     display: flex;
 }
 .project-img{
@@ -186,10 +171,24 @@ a:hover{
     align-items: center;
     color: black;
 }
+.project-cont p{
+    font-size: 20px;
+}
+.project-cont div b{
+    font-size:50px;
+    display: block;
+    margin-bottom: 10px;
+}
+.project_name{
+    font-size:30px;
+    display:block;
+    margin: 5px;
+}
 .pro-img{
     width: 300px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 207px;
+    border: 10px solid black;
 }
 .gmail{
     display: flex;
@@ -198,5 +197,111 @@ a:hover{
     width:50%;
 }
 .gmail-logo{
-    width:10%;
+    width:56px;
+    margin-right: 10px;
+}
+
+.Contact{
+    background-color: black;
+    color: white;
+}
+.Contact p{
+    font-size: 50px;
+    text-align: center;
+}
+
+.Contact a{
+    width: 50%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-logo{
+    display:flex;
+}
+.ed {
+    font-size: 50px;
+}
+
+
+
+@media only screen and (max-width: 400px){
+    .navbar-heading{
+        font-size: 15px;
+    }
+    .navbar{
+        gap:113px;
+        justify-content: start;
+    }
+    .navbar-ul{
+        font-size: 10px;
+        gap:10px;
+    }
+    .left div {
+        font-size: 10px;
+    }
+    .right img {
+        width: 124px;
+        height: 115px;
+        border: 10px solid black;
+        border-radius: 103px;
+    }
+    .e-img {
+        width: 138px;
+        height: 140px;
+    }
+    .ed {
+        font-size: 20px;
+    }
+    .education_ul {
+        font-size: 10px;
+    }
+    .sk-con b {
+        font-size: 20px;
+        margin:0 3px;
+    }
+    .s-img {
+        width: 62px;
+        height: 57px;
+    }
+    .skill-con {
+        width: 70%;
+    }
+    .skills-img {
+        width: 30%;
+    }
+    .btn-sk {
+        width: 65px;
+        height: 55px;
+        margin: 3px;
+        font-size: 10px;
+        border-radius: 105px;
+    }
+    .pro-img {
+        width: 112px;
+        height: 144px;
+        border-radius: 92px;
+    }
+    .project-cont div b {
+        font-size: 30px;
+    }
+    .project_name {
+        font-size: 20px;
+    }
+    .project-cont p{
+        font-size: 8px;
+    }
+    .linkedin-logo{
+        font-size: 10px;
+    }
+    .gmail-logo{
+        font-size: 10px;
+    }
+    .Contact p{
+        font-size: 30px;
+    }
+    .Contact a{
+        font-size: 10px;
+    }
 }

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="icon" href="favicon.ico">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
@@ -21,37 +25,40 @@
     </div>
     <div id="home" class="d1">
         <div class="left">
-            <ul class="left_ul">
-                <li><h1>Shaurya Gupta</h1></li>
-                <li>Web Developer</li>
-            </ul>
+            <div>Hi, Myself <span>  Shaurya Gupta.</span> I am a <span id="element"></span></div>
+            <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developer','Data Structure Problem Solver'],
+                typeSpeed: 50,
+                loop:true
+              });   
+            </script>
         </div>
         <div class="right">
-                <img class="d1_img" src="image/shaurya_gupta.png" alt="profile_photo">
-            
+                <img class="d1_img" src="image/shaurya_gupta.png" alt="profile_photo">      
         </div>
     </div>
     <div id="edu" class="education">
         <div class="edu-img">
-            <img class="e-img" src="image/college-round-svgrepo-com.svg" alt="education_image">
+            <img class="e-img" src="image/college_degree.svg" alt="education_image">
         </div>
         <div class="edu-con">
             <div class="e-con">
-                <h1>Education</h1>
+                <b class="ed">Education</b>
         <ul class="education_ul">
             <li>
-                <h3>Pranveer Singh Institute Of Technology,Kanpur </h3>
+                <b>Pranveer Singh Institute Of Technology,Kanpur </b>
                 <p>2021-2025</p>
             </li>
             <li>
-                <h3>Dr. Virendra Swarup Education Centre Avadhpuri , Kanpur</h3>
-                <h4>Intermediate - 2021 </h4>
+                <b>Dr. Virendra Swarup Education Centre Avadhpuri , Kanpur</b>
+                <b>Intermediate - 2021 </b>
                 <p>89.25%</p>
                 
             </li>
             <li>
-                <h3>Dr. Virendra Swarup Education Centre Avadhpuri , Kanpur</h3>
-                <h4>High School - 2019 </h4>
+                <b>Dr. Virendra Swarup Education Centre Avadhpuri , Kanpur</b>
+                <b>High School - 2019 </b>
                 <p>91.4%</p>  
             </li>
         </ul>
@@ -69,7 +76,7 @@
             
         
             <div class="sk-con">
-                <h1>Skills</h1>
+                <b>Skills</b>
                 <button class="btn-sk" id="ds" >Data Structure</button>
                 <button class="btn-sk" id="cpp" >C++</button>
                 <button class="btn-sk" id="java" >JAVA</button>
@@ -97,8 +104,8 @@
             </div>  
         <div class="project-cont">
             <div>
-                <h1>Project</h1>
-                <h3 style="font-style: italic">Portfolio</h3>
+                <b>Project</b>
+                <p class="project_name">Portfolio</p>
                 <p>this project include my personal details</p>
                 <p>education , project , skills and contact </p>
                 <p>details in the form of a webpage</p>
@@ -107,19 +114,22 @@
             
         </div>   
     </div>
-    <h1 style="background-color: black; text-align: center;">Contact Me</h1>
-    <div id="cont" class="Contact">
-                <a class="a-contact" href="https://linkedin.com/in/shaurya-gupta-9421b9227" target="_blank">
-                    <img src="image/linkedin.svg" alt="LinkedIn Logo" class="linkedin-logo">
-                    <span>linkedin.com/in/shaurya-gupta-9421b9227</span>
-                </a>
-                <div class="gmail">
-                    <img src="image/gmail.svg" alt="gmail Logo" class="gmail-logo">
-                    <a href="mailto:as.shauryagupta@gmail.com">as.shauryagupta@gmail.com</a>
-                </div>
+
+    <div id="cont"class="Contact">
+        <p>Contact Me</p>
+        <div class="contact-logo">
+        <a href="mailto:as.shauryagupta@gmail.com" target="_blank">
+        <span><img src="image/gmail.svg" alt="gmail Logo" class="gmail-logo"></span>
+        <span>as.shauryagupta@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/shaurya-gupta-9421b9227" target="_blank">
+        <span><img src="image/linkedin.svg" alt="linkedin Logo" class="linkedin-logo"></span>
+        <span>linkedin.com/in/shaurya-gupta-9421b9227</span>
+        </a>
         </div>
-        
     </div>
+
+
     
 </body>
 </html>
