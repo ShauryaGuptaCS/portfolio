@@ -21,7 +21,7 @@ html, body{
     display:flex;
     justify-content: space-between;
     font-size: 40px;
-    position: fixed;
+    
     width: 100%;
 }
 
