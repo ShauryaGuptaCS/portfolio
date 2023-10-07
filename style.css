@@ -138,8 +138,6 @@ html, body{
 }
 .btn-sk:hover{
     background-color: #c0c0c0;
-    width:148px;
-    height:51px;
 }
 .linkedin-logo{
     width: 56px;
@@ -281,12 +279,7 @@ a:hover{
         font-size: 10px;
         border-radius: 85px;
     }
-    .bt-sk:hover{
-        width: 60px;
-        height: 60px;
-        font-size: 5px;
-        border-radius: 15px;
-    }
+    
     .pro-img {
         width: 112px;
         height: 144px;
