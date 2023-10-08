@@ -132,9 +132,9 @@ html, body{
 }
 
 .skill-con{
-    width: 50%;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .sk-con{
@@ -146,7 +146,7 @@ html, body{
     flex-direction: column;
 }
 .skills-img{
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,53 +250,3 @@ html, body{
 .contact-logo a:hover{
     color: rgb(137, 118, 11);
 }
-
-/*
-
-
-.linkedin-logo{
-    width: 56px;
-    margin-right: 3px;
-}
-a:link,:visited,:active{
-    color: white;
-}
-a:hover{
-    color:rgb(244, 217, 65);
-}
-
-.gmail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:50%;
-}
-.gmail-logo{
-    width:56px;
-    margin-right: 10px;
-}
-
-.Contact{
-    background-color: black;
-    color: white;
-}
-.Contact p{
-    font-size: 50px;
-    text-align: center;
-}
-
-.Contact a{
-    width: 50%;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contact-logo{
-    display:flex;
-}
-.ed {
-    font-size: 50px;
-}
-
-*/
