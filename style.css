@@ -1,3 +1,4 @@
+
 .navbar-ul{
     display:flex;
     list-style: none;
@@ -9,19 +10,17 @@
     padding: 0;
 }
 html, body{
-    /* background-color: blanchedalmond; */
-    color: white;
+    
+    color: rgb(217, 211, 211);
 }
 
 .navbar{
-    width:100%;
     background-color: black;
-    color:white;
+    color:rgb(217, 211, 211);
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    position: fixed;
+    padding: 20px;
 }
 .navbar-heading{
     font-size: 50px;
@@ -31,80 +30,123 @@ html, body{
 }
 .navbar-ul a{
     text-decoration: none;
-    color:white
+    color:rgb(217, 211, 211);
 }
 .navbar-ul a:hover{
     font-size:30px;
-}
-.d1{
-    width:100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color:#6f6e6c;
-    height:500px;
-}
-.left{
-    width:30%;
-}
-.left div{
-    font-size: 35px;
-}
-.left div span{
-    color: gold;
+    color: rgb(137, 118, 11);
 }
 
+
+.d1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#6f6e6c;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.left{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.left div{
+    width:50%;
+    display: flex;
+    flex-direction: column; 
+}
 .right{
-    width:30%;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .right img{
     width:238px;
     height:242px;
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 147px;
     
 }
-
+.left div span{
+    color: rgb(231, 219, 156);
+}
 .education{
     width:100%;
-    height: 500px;
     background-color:rgb(209, 204, 204);
     display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.edu-img{
+    width: 50%;
 }
 .edu-con{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:50%;
-    color:black;
-}.edu-img{
     width:50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+}
+.ed{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.education_ul div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;;
+}
+.education_ul div b{
+    font-size: 20px;
+}
+.e-con{
+    display: flex;
+    flex-direction: column;
+}
+.edu-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .e-img{
     width:300px;
     height:300px;
 }
-
-.education_ul{
-    font-size: 22px;
-    padding-left: 2.5%;
-    list-style-type:circle;
+.Skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#86878a;
+    color: black;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
-    
-.Skills{
-    display:flex;
+.skill-con{
+    width: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    height: 500px;
-    width: 100%;
-    background-color:#86878a;
+}
+.sk-con{
+    display: flex;
+    flex-direction: column;
+}
+.sk_div{
+    display: flex;
+    flex-direction: column;
 }
 .skills-img{
-    width:50%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,33 +154,106 @@ html, body{
 .s-img{
     width:250px;
     height: 250px;
-    object-fit: cover;
 }
-
-.skill-con{
+.sk-con b{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.btn-sk{
+    width:153px;
+    height:54px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 27px;
+    background-color: rgb(21, 19, 19);
+    color:rgb(217, 211, 211); 
+}
+.btn-sk:hover{
+    width: 155px;
+    height: 56px;
+    background-color: #c0c0c0;
+}
+.project{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 204, 204);
+    color:black;
+    padding-top:75px;
+    padding-bottom: 75px;
+}
+.project-img{
     width:50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sk-con b{
-    font-size: 30px;
-    display: block;
+.pro-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 207px;
+    border: 5px solid black;
+}
+.project-cont{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.project-cont b{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.project-cont div div {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.project_name{
+    font-size: 25px;
+    margin-bottom:10px;
 }
 
-.btn-sk{
-    width:153px;
-    height:54px;
-    margin:20px;
+.Contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(45, 45, 45);
+    color: rgb(217, 211, 211);
+    width:100%;
+}
+.Contact p{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.gmail-logo , .linkedin-logo{
+    width:35px;
+    height: 35px;
+}
+.contact-logo{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+.contact-logo a{
+    width:50%;
     font-size: 20px;
-    border-radius: 27px;
-    background-color: rgb(21, 19, 19);
-    color:white;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    text-decoration: none;
+    color: rgb(217, 211, 211);
 }
-.btn-sk:hover{
-    background-color: #c0c0c0;
+.contact-logo a:hover{
+    color: rgb(137, 118, 11);
 }
+
+/*
+
+
 .linkedin-logo{
     width: 56px;
     margin-right: 3px;
@@ -149,45 +264,7 @@ a:link,:visited,:active{
 a:hover{
     color:rgb(244, 217, 65);
 }
-.project{
-    width:100%;
-    height:500px;
-    display: flex;
-}
-.project-img{
-    width: 50%;
-    background-color: rgb(209, 204, 204);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project-cont{
-    width: 50%;
-    background-color: rgb(209, 204, 204);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-.project-cont p{
-    font-size: 20px;
-}
-.project-cont div b{
-    font-size:50px;
-    display: block;
-    margin-bottom: 10px;
-}
-.project_name{
-    font-size:30px;
-    display:block;
-    margin: 5px;
-}
-.pro-img{
-    width: 300px;
-    height: 300px;
-    border-radius: 207px;
-    border: 10px solid black;
-}
+
 .gmail{
     display: flex;
     justify-content: center;
@@ -222,88 +299,4 @@ a:hover{
     font-size: 50px;
 }
 
-
-
-@media only screen and (max-width: 400px){
-    .navbar-heading{
-        font-size: 15px;
-    }
-    .navbar{
-        gap:113px;
-        justify-content: start;
-    }
-    .navbar-ul{
-        font-size: 10px;
-        gap:10px;
-    }
-    .navbar-ul a:hover{
-        font-size:8px;
-    }
-    .left div {
-        font-size: 10px;
-    }
-    .right img {
-        width: 124px;
-        height: 115px;
-        border: 10px solid black;
-        border-radius: 103px;
-    }
-    .e-img {
-        width: 138px;
-        height: 140px;
-    }
-    .ed {
-        font-size: 20px;
-    }
-    .education_ul {
-        font-size: 10px;
-    }
-    .sk-con b {
-        font-size: 20px;
-        margin:0 3px;
-    }
-    .s-img {
-        width: 62px;
-        height: 57px;
-    }
-    .skill-con {
-        width: 70%;
-    }
-    .skills-img {
-        width: 30%;
-    }
-    .btn-sk {
-        width: 68px;
-        height: 64px;
-        margin: 3px;
-        font-size: 10px;
-        border-radius: 85px;
-    }
-    
-    .pro-img {
-        width: 112px;
-        height: 144px;
-        border-radius: 92px;
-    }
-    .project-cont div b {
-        font-size: 30px;
-    }
-    .project_name {
-        font-size: 20px;
-    }
-    .project-cont p{
-        font-size: 8px;
-    }
-    .linkedin-logo{
-        font-size: 10px;
-    }
-    .gmail-logo{
-        font-size: 10px;
-    }
-    .Contact p{
-        font-size: 30px;
-    }
-    .Contact a{
-        font-size: 10px;
-    }
-}
+*/
